@@ -32,12 +32,23 @@
                   <button type="button" (click)="login()"
                     class="btn btn-danger btn-md btn-block waves-effect text-center m-b-20">{{'Sign In' | translate}}</button>
                 </div>
+               
                 <div class="btns">
                   <img src="assets/en.png" (click)="changeLng('en')"
                     [ngClass]="getClassName() == 'en' ? 'flagActive':'flagDeactive'" alt="">
-                  <img src="assets/spanish.png" (click)="changeLng('spanish')"
+                  
+                    <img src="assets/spanish.png" (click)="changeLng('spanish')"
                     [ngClass]="getClassName() == 'spanish' ? 'flagActive':'flagDeactive'" alt="">
+
+                    <img src="assets/portuguese_pt.png" (click)="changeLng('portuguese_pt')"
+                    [ngClass]="getClassName() == 'portuguese_pt' ? 'flagActive':'flagDeactive'" alt="">
+                    
+                    <img src="assets/portuguese_br.png" (click)="changeLng('portuguese_br')"
+                    [ngClass]="getClassName() == 'portuguese_br' ? 'flagActive':'flagDeactive'" alt="">
                 </div>
+
+
+
               </div>
             </div>
           </form>
