@@ -1,24 +1,32 @@
 <div id="pcoded" (window:resize)="onResize($event)" class="pcoded iscollapsed" theme-layout="vertical"
   vertical-placement="left" vertical-layout="wide" [attr.pcoded-device-type]="deviceType"
   [attr.vertical-nav-type]="verticalNavType" [attr.vertical-effect]="verticalEffect" vnavigation-view="view1">
+
   <div class="pcoded-overlay-box"></div>
   <div class="pcoded-container navbar-wrapper">
+    
     <nav class="navbar header-navbar pcoded-header" header-theme="theme4" pcoded-header-position="fixed">
+      
       <div class="navbar-wrapper">
         <div class="navbar-logo" navbar-theme="theme4">
+
           <a class="mobile-menu" id="mobile-collapse" href="javascript:;" (click)="toggleOpened()"
             [exclude]="'#main_navbar'" (clickOutside)="onClickedOutside($event)">
             <i class="ti-menu"></i>
           </a>
+
           <a [routerLink]="['/']">
             <img class="img-fluid" src="assets/sidemenu.png" alt="Theme-Logo" />
           </a>
+
           <a (click)="onMobileMenu()" class="mobile-options">
             <i class="ti-more"></i>
           </a>
+          
         </div>
 
         <div class="navbar-container">
+
           <div>
             <ul class="nav-left">
               <li>
@@ -26,7 +34,11 @@
                       class="ti-menu f-18"></i></a></div>
               </li>
             </ul>
+            
             <ul [@mobileMenuTop]="isCollapsedMobile" class="nav-right" [ngClass]="isCollapsedMobile">
+            
+            <!-- Lista suspensa para troca do idioma.
+              
               <li class="header-notification lng-dropdown">
 
                 <a href="javascript:;" id="dropdown-active-item">
@@ -54,12 +66,12 @@
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li>  --> 
 
               <li class="user-profile header-notification">
                 <a [routerLink]="['/']">
                   <img src="assets/images/user.png" alt="User-Profile-Image">
-                  <span>Food Admin</span>
+                  <span>Desenrola</span>
                   <i class="ti-angle-down"></i>
                 </a>
                 <ul class="show-notification profile-notification">
