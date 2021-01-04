@@ -1,4 +1,5 @@
 
+
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { BehaviorSubject } from 'rxjs';
@@ -141,14 +142,13 @@ export class ApisService {
   public login(email: string, password: string): Promise<any> {
     return new Promise<any>((resolve, reject) => {
       this.fireAuth.auth.signInWithEmailAndPassword(email, password)
-        .then(res => {
+      .then(res => {
           if (res.user) {
             this.authInfo$.next(new AuthInfo(res.user.uid));
             resolve(res.user);
           }
         })
         .catch(err => {
-
           this.authInfo$.next(ApisService.UNKNOWN_USER);
           reject(`login failed ${err}`);
         });

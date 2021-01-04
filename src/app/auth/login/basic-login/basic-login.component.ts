@@ -37,7 +37,6 @@ export class BasicLoginComponent implements OnInit {
     }
     this.spinner.show();
     this.api.login(this.email, this.password).then((data) => {
-      console.log(data);
       this.api.getProfile(data.uid).then((info: any) => {
         this.spinner.hide();
         console.log(info);

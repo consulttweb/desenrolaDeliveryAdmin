@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyC4s7dIpPWhLnALV5EqVxhtApICIxRBW28',
-    authDomain: 'desenroladelivery.firebaseapp.com',
-    projectId: 'desenroladelivery',
-    storageBucket: 'desenroladelivery.appspot.com',
-    messagingSenderId: '890029439587',
-    appId: '1:890029439587:web:b7f8fe3876d8bb7f8bd656',
+    apiKey: "AIzaSyB6isAtisIUsMAP1jc_lm4IkeIcZv77sJM",
+    authDomain: "desenrola-ad0e8.firebaseapp.com",
+    projectId: "desenrola-ad0e8",
+    storageBucket: "desenrola-ad0e8.appspot.com",
+    messagingSenderId: "757361049402",
+    appId: "1:757361049402:web:099dda75e107e12ddb9a03",
     measurementId: ''
   },
   onesignal: {
